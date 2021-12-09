@@ -1,10 +1,7 @@
-#include <stdio.h>
 #include <sys/types.h>
+#include <stdio.h>
 #include <sys/wait.h>
 #include <unistd.h>
-
-using namespace std;
-
 int main()
 {
     pid_t pid;
@@ -23,10 +20,7 @@ int main()
     }
     else
     {
-		/* parent process */
-		/* parent will wait for the child to complete */
-		wait(NULL);
-        printf("Child Complete");
+        printf("Parent Process.");
     }
     return 0;
 }
